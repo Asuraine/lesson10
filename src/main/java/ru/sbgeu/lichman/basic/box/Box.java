@@ -19,19 +19,19 @@ public class Box {
         this.width = 100.5f;
         this.height = 200.5f;
         this.depth = 100.5f;
-        this.openBox = false;
-        this.closedBoxes = false;
+        this.openBox = true;
+        this.closedBoxes = true;
     }
 
     public void openBoxes() {
-        if (openBox = true) {
+        if (openBox) {
             System.out.println("Коробка открыта");
         } else
             System.out.println("Коробка закрыта");
     }
 
     public void closedBoxes() {
-        if (closedBoxes == true) {
+        if (closedBoxes) {
             System.out.println("Коробка открыта");
         } else
             System.out.println("Коробка закрыта");
@@ -49,7 +49,7 @@ public class Box {
 
     public void add(String item) {
         for (int i = 0; i < items.length; i++) {
-            if (items[i] == null && closedBoxes == true) {
+            if (items[i] == null && openBox) {
                 items[i] = item;
                 System.out.println("Вы положили: " + item);
                 return;

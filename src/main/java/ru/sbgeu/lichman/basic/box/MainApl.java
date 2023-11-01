@@ -16,6 +16,9 @@ public class MainApl {
         box.info();
         box.setColor("Черный");
         box.info();
+        box.add("Чашка");
+        box.openBoxes();
+
 
 
     }
