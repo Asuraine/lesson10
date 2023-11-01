@@ -3,7 +3,7 @@ package ru.sbgeu.lichman.basic.box;
 public class MainApl {
     public static void main(String[] args) {
 
-        Box box = new Box("Красный");
+        Box1 box = new Box1("Красный");
         box.info();
         box.add("Чашка");
         box.info();
@@ -18,6 +18,7 @@ public class MainApl {
         box.info();
         box.add("Чашка");
         box.openBoxes();
+
 
 
 
