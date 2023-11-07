@@ -3,21 +3,14 @@ package ru.sbgeu.lichman.basic.box;
 public class MainApl {
     public static void main(String[] args) {
 
-        Box box = new Box("Красный");
+        Box box = new Box("Черный", 10, 10, 10);
         box.info();
         box.add("Чашка");
-        box.info();
-        box.clear("Чашка");
-        box.info();
-        box.openBoxes();
+        box.open();
         box.add("Чашка");
-        box.closedBoxes();
-        box.add("Чашка");
-        box.info();
-        box.setColor("Черный");
-        box.info();
-        box.add("Чашка");
-        box.openBoxes();
+        box.setColor("Cиний");
+        box.close();
+
 
 
 
