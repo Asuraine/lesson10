@@ -56,7 +56,6 @@ public class Box {
             }
         }
 
-
         public void info() {
             System.out.println("Тут " + color + " коробка с размерами " + width + "*" + length + "*" + height + "\nВ коробке есть: ");
             {
