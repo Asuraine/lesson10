@@ -1,7 +1,7 @@
 package ru.sbgeu.lichman.basic.box;
 
 public class Box {
-        private String items;
+        private String item;
         private String color;
         private final int width;
         private final int length;
@@ -14,7 +14,7 @@ public class Box {
         }
 
         public Box(String color, int width, int length, int height) {
-            this.items = null;
+            this.item = null;
             this.color = color;
             this.width = width;
             this.length = length;
@@ -24,10 +24,10 @@ public class Box {
 
         public void open() {
             if (isOpen) {
-                System.out.println("Коробка открыта!");
+                System.out.println("Коробка уже открыта");
                 this.isOpen = true;
             } else {
-                System.out.println("Коробка уже открыта");
+                System.out.println("Коробка открыта!");
 
             }
         }
@@ -46,21 +46,20 @@ public class Box {
                 System.out.println("Коробка закрыта! В нее нельзя положить предмет");
                 return;
             }
-            if (items == null) {
-                items = item;
+            if (item == null) {
+                item = item;
                 System.out.println("В коробочку положили " + item);
                 return;
             }
-            if (items != null) {
-                System.out.println("В коробке лежит " + items);
+            if (item != null) {
+                System.out.println("В коробке лежит " + item);
             }
         }
-
 
         public void info() {
             System.out.println("Тут " + color + " коробка с размерами " + width + "*" + length + "*" + height + "\nВ коробке есть: ");
             {
-                System.out.println(items);
+                System.out.println(item);
             }
         }
     }
